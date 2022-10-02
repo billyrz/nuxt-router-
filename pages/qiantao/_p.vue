@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='box'>
     <h3>
       当前链接: <i>{{ this.$route.path }}</i>
     </h3>
@@ -28,4 +28,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.box{
+  min-width: 840px;
+  min-height:340px;
+  border:1px solid;
+  margin-top:30px;
+}
+
+</style>
