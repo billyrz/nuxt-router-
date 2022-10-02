@@ -42,4 +42,19 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // 使用nuxtconfig 配置
+
+  router: {
+    extendRoutes(routes, resolve) {
+      const router = [
+        {
+          name: 'extends',
+          path: '/extend/test',
+          component: resolve(__dirname, './components/extendsRouter.vue'),
+        },
+      ];
+      routes.push(...router);
+    },
+  },
 };
