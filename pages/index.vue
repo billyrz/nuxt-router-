@@ -2,11 +2,11 @@
   <div class="container">
     <div>
       <Logo />
-      <h6 class="title"> 三种路由配置</h6>
+      <h6 class="title">三种路由配置</h6>
       <ul>
-      <li>page页面自动配置</li>
-      <li>@nuxtjs/router 模块配置</li>
-      <li>nuxt.config.js 中配置 router>extendRouters </li>
+        <li>page页面自动配置</li>
+        <li>@nuxtjs/router 模块配置</li>
+        <li>nuxt.config.js 中配置 router>extendRouters</li>
       </ul>
       <div class="links">
         <nuxt-link to="/item" class="button--grey" alt=" 自动路由 /item">
@@ -41,6 +41,12 @@
         <nuxt-link :to="'/extend/test'" class="button--grey">
           nuxt.config.js 配置的拓展路由 /extend/test</nuxt-link
         >
+      </div>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <div>
+        <nuxt-link to="/qiantao" class="button--grey">嵌套路由</nuxt-link>
       </div>
     </div>
   </div>
